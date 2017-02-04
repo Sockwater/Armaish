@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33646974340635628}
   - component: {fileID: 23924122030415202}
   - component: {fileID: 114165721155962092}
-  - component: {fileID: 136182518231105568}
+  - component: {fileID: 65743281371407152}
   m_Layer: 0
   m_Name: ARBullet
   m_TagString: Untagged
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1564251004204844}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.1752, z: 0.043571323}
+  m_LocalPosition: {x: -0, y: 0.2011, z: 0.043571323}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,6 +81,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1564251004204844}
   m_Mesh: {fileID: 4300014, guid: 7a741cf3d8ef07946a696aad38704d9c, type: 3}
+--- !u!65 &65743281371407152
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1564251004204844}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.009835105, y: 0.0098351, z: 0.043694973}
+  m_Center: {x: -4.656613e-10, y: 0, z: 0.021847516}
 --- !u!114 &114165721155962092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -92,17 +104,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ca4a30ab61902468164f6cb537abe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
---- !u!136 &136182518231105568
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1564251004204844}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.021676017
-  m_Height: 0.0098351
-  m_Direction: 1
-  m_Center: {x: -4.656613e-10, y: 0.0000000020954758, z: 0.021676017}
+  damage: 25
